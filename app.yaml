@@ -12,8 +12,8 @@ handlers:
   upload: static/index\.html
 
 # This handler routes requests to your APIs to your Endpoints code.
-- url: /_ah/spi/.*
-#- url: /_ah/api/.*
+#- url: /_ah/spi/.*
+- url: /_ah/api/.*
   script: helloworld_api.APPLICATION
 
 # Third party libraries that are included in the App Engine SDK must be listed
@@ -27,5 +27,5 @@ libraries:
 - name: ssl
   version: latest
 
-- name: endpoints
-  version: 1.0
+#- name: endpoints
+#  version: 1.0
