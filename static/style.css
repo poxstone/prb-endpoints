@@ -1,0 +1,23 @@
+#signinButton {
+  float: right;
+}
+label {
+  display: block;
+}
+form {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-width: 0px 1px 1px 1px;
+}
+
+ol#outputLog {
+  background: #ccc;
+  display: block;
+  padding: 10px 10px 10px 30px;
+  margin: 0px;
+}
+
+li {
+  padding: 2px 0;
+  border-bottom: 1px solid gray;
+}

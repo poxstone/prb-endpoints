@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello Endpoints!</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/endpoints.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=init"></script>
+</head>
+
+<body>
+  <header>
+    <button id="signinButton">Sign in</button>
+  </header>
+
+  <main>
+    <ol id="outputLog"></ol>
+
+    <form onsubmit="return false">
+      <label for="id">Greeting ID [0,1]:
+        <input type="number" min="0" value="0" id="id" />
+      </label>
+      <button id="getGreeting" >Submit</button>
+    </form>
+
+    <form onsubmit="return false">
+      <button id="listGreeting" >List Greetings</button>
+    </form>
+
+    <form onsubmit="return false">
+      <b>Multiply Greetings:</b>
+
+      <label for="greeting">Greeting:
+        <input id="greeting" value="repeatme, " />
+      </label>
+
+      <label for="count">Count:
+        <input type="number" min="0" value="2" id="count" />
+      </label>
+      <button id="multiplyGreetings" >Submit</button>
+    </form>
+
+    <form onsubmit="return false">
+      <button id="authedGreeting" >Authenticated Greeting</button>
+    </form>
+  </main>
+
+</body>
+
+</html>
