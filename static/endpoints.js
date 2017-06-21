@@ -48,8 +48,14 @@
       }
     
       apisToLoad = 2; // must match number of calls to gapi.client.load()
-      gapi.client.load('helloworld', 'v1', callbackInint, apiRoot); // load api "helloworld" and version
-      gapi.client.load('oauth2', 'v2', callbackInint);
+      if (gapi.client && gapi.client.load) {
+        gapi.client.load('helloworld', 'v1', callbackInint, apiRoot); // load api "helloworld" and version
+        gapi.client.load('oauth2', 'v2', callbackInint);
+      } else {
+        setTimeout(()=>{
+          apiHello.init(apiRoot);
+        }, 250)
+      }
     };
     
     // init with apis url in front

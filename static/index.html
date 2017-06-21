@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="//getfirebug.com/releases/lite/1.3/skin/light/firebug.css">
-  <script src='//getfirebug.com/releases/lite/1.3/firebug-lite.js'>
+  <script src='//getfirebug.com/releases/lite/1.3/firebug-lite.js' hidden>
     {
       startInNewWindow : false,
       startOpened : true,
@@ -20,7 +20,7 @@
   <title>Hello Endpoints!</title>
   <link rel="stylesheet" href="/static/style.css">
   <script src="/static/endpoints.js"></script>
-  <script src="https://apis.google.com/js/client.js?onload=init"></script>
+  <script src="https://apis.google.com/js/client.js?onload"></script>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
       <button id="authedGreeting" >Authenticated Greeting</button>
     </form>
   </main>
-
+<script>init()</script>
 </body>
 
 </html>
