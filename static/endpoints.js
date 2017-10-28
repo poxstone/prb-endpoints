@@ -3,7 +3,8 @@
     // id and scopes
     const CLIENT_ID = '448548789014-su3rs3853if9vabnpuinr6d4nmku2log.apps.googleusercontent.com';
     const SCOPES = 'https://www.googleapis.com/auth/userinfo.email';
-    const APIROOT = 'endpoint2-dot-efor-gae-temp-01.appspot.com';
+    //const APIROOT = 'endpoint2-dot-efor-gae-temp-01.appspot.com';
+    const APIROOT = '8080-dot-2975244-dot-devshell.appspot.com';
     const APILOCAL = 'localhost:8080';
     const EXTAPI = false; // true force to load APIROOT from local
     
